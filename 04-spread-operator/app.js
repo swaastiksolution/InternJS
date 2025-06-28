@@ -16,7 +16,7 @@ const friends = [...boys, ...girls, bestFriend];
 console.log(friends);
 
 //reference
-// const newFriends = friends;
+const newFriends = friends;
 // copy
 newFriends = [...friends];
 newFriends[0] = 'nancy';
