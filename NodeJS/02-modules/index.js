@@ -1,3 +1,3 @@
-const fs = require("fs");
+import mul, { add as addFn} from "./math.js";
 
-fs.writeFileSync("./test.txt",)
+console.log(mul)

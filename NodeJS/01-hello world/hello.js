@@ -6,7 +6,6 @@ console.log("hello world!!");
  * web global variables are exclusive to chrome ie document and Window don't exist in NodeJS
 */
 
-
 // NPM -> Node Package Manager used to add/delete/upgrade dependencies for your projects
 
 // use command `npm init` to initialize a new node js project

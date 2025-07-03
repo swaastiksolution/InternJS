@@ -1,0 +1,28 @@
+https://www.youtube.com/watch?v=W8FUmktsjojn&list=RDW8FUmkw3JJV
+
+1. Protocol
+https://
+- Protocol defines how data is transmitted between your browser and the web server.
+- 'https' = Hypertext Transfer Protocol Secure (encrypted, safer than 'http').
+
+2. Subdomain and Domain Name
+www.youtube.com
+- 'www' = World Wide Web (subdomain, often optional today).
+- 'youtube.com' = Domain name (identifies the server).
+
+3. Path
+/watch
+- The path specifies the resource on the server.
+- '/' is the root of the website.
+- '/watch' is the endpoint used by YouTube to load a video page.
+
+4. Query Parameters
+?v=W8FUmktsjojn&list=RDW8FUmkw3a4U
+
+- Start with a '?' and contain key=value pairs, separated by '&'.
+- Used to pass data to the server.
+
+In this case:
+
+- v=W8FUmktsjojn → 'v' is the video ID.
+- list=RDW8FUmkw3a4U → 'list' is a playlist ID, such as an auto-generated Mix.
