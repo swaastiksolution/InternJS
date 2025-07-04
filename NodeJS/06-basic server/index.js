@@ -1,5 +1,6 @@
 import http from "http"; // built-in node module  to create a http server
-import fs from "fs";    // fs -> File System handling 
+import fs from "fs";    // fs -> File System handling
+import url from "url";
 
 
 /**
@@ -15,12 +16,33 @@ import fs from "fs";    // fs -> File System handling
 */
 
 const myServer = http.createServer((req, res) => {
+    if (req.url === '/favicon.ico') {
+        return res.end();
+    }
+    // basic routing setup
     const log = `${new Date().toISOString()} ${req.url} ${req.method} new req recieved\n`;
     fs.appendFile("./log.txt", log, (err) => {
         if (err) {
             return null;
         }
-        res.end("hello")
+        const myURL = url.parse(req.url, true);
+        console.log(myURL);
+        if (req.method === 'GET' && myURL.pathname === '/') {
+            return res.end("this is Home page")
+        }
+        else if (req.method === 'GET' && myURL.pathname === '/aboutus') {
+            return res.end("this is about page")
+        }
+        else if (req.method === 'GET' && myURL.pathname === '/contactus') {
+            return res.end("this contact us page")
+        }
+        else if (req.method === 'GET' && myURL.pathname === '/welcome') {
+            const { name = 'guest user', age } = myURL.query;
+            return res.end(`Hi ${name}`)
+        }
+        else {
+            return res.end("404 - page not found")
+        }
     })
 });
 
