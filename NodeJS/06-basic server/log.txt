@@ -14,3 +14,14 @@
 2025-07-04T07:54:07.431Z /welcome?name=havmor&age=20 GET new req recieved
 2025-07-04T07:55:36.124Z /welcome?name=havmor&age=20 GET new req recieved
 2025-07-04T07:58:05.618Z /welcome GET new req recieved
+2025-07-08T07:41:28.120Z / GET new req recieved
+2025-07-08T07:41:51.646Z / GET new req recieved
+2025-07-08T07:41:59.251Z / GET new req recieved
+2025-07-08T07:42:01.946Z /.well-known/appspecific/com.chrome.devtools.json GET new req recieved
+2025-07-08T07:42:05.277Z / GET new req recieved
+2025-07-08T07:42:06.083Z /.well-known/appspecific/com.chrome.devtools.json GET new req recieved
+2025-07-08T07:44:26.924Z / GET new req recieved
+2025-07-08T07:44:27.065Z /.well-known/appspecific/com.chrome.devtools.json GET new req recieved
+2025-07-08T07:44:44.763Z /.well-known/appspecific/com.chrome.devtools.json GET new req recieved
+2025-07-08T07:44:46.766Z / GET new req recieved
+2025-07-08T07:44:46.942Z /.well-known/appspecific/com.chrome.devtools.json GET new req recieved

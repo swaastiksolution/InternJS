@@ -27,8 +27,15 @@ const myServer = http.createServer((req, res) => {
         }
         const myURL = url.parse(req.url, true);
         console.log(myURL);
-        if (req.method === 'GET' && myURL.pathname === '/') {
-            return res.end("this is Home page")
+        if ( myURL.pathname === '/') {
+            if (req.method === 'GET') {
+                // setting up header to define the type of resposne being sent 
+                res.setHeader("content-type",'application/json')
+                return res.end(JSON.stringify({message: "helloo"}))
+            }
+            else if (req.method === 'POST') {
+                return res.end("created new user")
+            } 
         }
         else if (req.method === 'GET' && myURL.pathname === '/aboutus') {
             return res.end("this is about page")
@@ -47,7 +54,7 @@ const myServer = http.createServer((req, res) => {
 });
 
 
-// here we tell the server to listen on PORT 500
+// here we tell the server to listen on PORT 5000
 // a PORT signifies a communication endpoint
 myServer.listen(5000, () => {
     console.log("my server started")
