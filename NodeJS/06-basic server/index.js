@@ -29,7 +29,7 @@ const myServer = http.createServer((req, res) => {
         console.log(myURL);
         if ( myURL.pathname === '/') {
             if (req.method === 'GET') {
-                // setting up header to define the type of resposne being sent 
+                // setting up header to define the type of resposne being sent
                 res.setHeader("content-type",'application/json')
                 return res.end(JSON.stringify({message: "helloo"}))
             }
