@@ -8,13 +8,14 @@ disclaimer:
 ---
 
 ## 📁 Folder Structure
-
+```bash
 your-project-name/
 ├── MOCK_DATA.json # Contains JSON user data
 ├── .env # Environment variables (e.g. PORT)
 ├── index.js # Main server code
 ├── package.json
 └── readmeFIRST.md # This file
+```
 
 ### steps to create
 
