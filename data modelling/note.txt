@@ -1,0 +1,8 @@
+//Data Modelling
+Data modelling is the process of creating blueprint of a system’s data, what and how it will be stored, accessed, and related. It helps define the structure, relationships, constraints, and operations that can be performed on the data.
+
+in simpler terms, it answers the question 
+"what kind of data do we want, have and how do we organize it?"
+
+
+ 

@@ -26,7 +26,9 @@ app.post("/login", (req, res) => {
 
     // Generate JWT
     const token = jwt.sign(
-        { userId: user.id }, // payload
+        { userId: user.id,
+            msg: "hi from jwt payload"
+         }, // payload
         JWT_SECRET,
         { expiresIn: "1h" } // 1 hour expiry
     );
